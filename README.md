@@ -49,6 +49,15 @@ Download raw ESA Anomalies Dataset from the link https://doi.org/10.5281/zenodo.
 
 There are separate script to generate preprocessed data for TimeEval framework for each mission. The scripts are located in notebooks\data-prep folder. From the notebooks\data-prep folder run:
 
+```bash
+mkdir data
+cd data
+wget https://zenodo.org/records/12528696/files/ESA-Mission1.zip
+wget https://zenodo.org/records/12528696/files/ESA-Mission2.zip
+wget https://zenodo.org/records/12528696/files/ESA-Mission3.zip
+cd ..
+```
+
 Mission1: 
 ```
 python Mission1_semisupervised_prep_from_raw.py ../../data/ESA-Mission1
